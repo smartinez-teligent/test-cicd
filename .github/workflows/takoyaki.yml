@@ -28,9 +28,9 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_KEY }}
-      - run: npm install --global yarn
-      - run: yarn add express
-      - run: yarn add typescript ts-node nodemon -D
-      - run: yarn add @types/express @types/node -D
-      - run: yarn build
-      - run: yarn dev
+      # - run: npm install --global yarn
+      # - run: yarn add express
+      # - run: yarn add typescript ts-node nodemon -D
+      # - run: yarn add @types/express @types/node -D
+      # - run: yarn build
+      # - run: yarn dev
