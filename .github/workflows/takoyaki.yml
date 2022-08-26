@@ -29,6 +29,4 @@ jobs:
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USERNAME }}
         key: ${{ secrets.SSH_KEY }}
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
+    - run: yarn dev
