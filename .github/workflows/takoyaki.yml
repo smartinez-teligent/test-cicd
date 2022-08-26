@@ -32,4 +32,5 @@ jobs:
       - run: yarn add express
       - run: yarn add typescript ts-node nodemon -D
       - run: yarn add @types/express @types/node -D
-      - run: yarn start
+      - run: yarn build
+      - run: yarn dev
