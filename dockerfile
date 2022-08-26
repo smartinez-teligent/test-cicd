@@ -6,10 +6,7 @@ COPY package.json ./
 COPY tsconfig.json ./
 
 RUN npm install --global yarn --force
-RUN yarn add express
-RUN yarn add typescript ts-node nodemon -D
-RUN yarn add @types/express @types/node -D
-RUN yarn build
+RUN yarn install
 
 COPY . .
 
