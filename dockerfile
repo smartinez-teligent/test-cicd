@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 
 COPY package.json ./
 
-RUN npm install --global yarn
+RUN npm install --global yarn --force
 RUN yarn add express
 RUN yarn add typescript ts-node nodemon -D
 RUN yarn add @types/express @types/node -D
