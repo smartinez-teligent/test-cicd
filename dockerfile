@@ -2,8 +2,7 @@ FROM node:latest
 
 WORKDIR /usr/src/test-cicd
 
-COPY package.json ./
-COPY tsconfig.json ./
+COPY . ./
 
 RUN npm install --global yarn --force
 RUN yarn add express
